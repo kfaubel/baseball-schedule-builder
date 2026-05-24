@@ -1,20 +1,20 @@
-// Base set from: https://github.com/tsconfig/bases/blob/main/bases/node14.json
+// Base set from: https://github.com/tsconfig/bases/blob/main/bases/node22.json
 // Ref: https://www.typescriptlang.org/tsconfig
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "display": "Node 14",
+    "display": "Node 22",
   
     "compilerOptions": {
-      "lib": ["es2023"],                            // Reccomended for Node 20 - lib version in generated JS code (default matches target)
-      "module": "commonjs",                         // Reccomended for Node 20 - what module resolution system to assume when generating JS code
-      "target":"ES2022",                            // Reccomended for Node 20 - what flavor of JS to generate natively, newer syntax generates emulated code
+      "lib": ["es2023"],                            // Reccomended for Node 22 - lib version in generated JS code (default matches target)
+      "module": "NodeNext",                         // Reccomended for Node 22 - what module resolution system to assume when generating JS code
+      "target": "ES2023",                           // Reccomended for Node 22 - what flavor of JS to generate natively, newer syntax generates emulated code
       
-      "moduleResolution": "Node",                   // How tsc tries to find modules, tsc matches nodejs so "node" is the best choice.  Default for Node.
+      "moduleResolution": "NodeNext",               // How tsc tries to find modules, tsc matches nodejs so "NodeNext" is the best choice.
 
-      "strict": true,                               // Reccomended for Node 14
-      "esModuleInterop": true,                      // Reccomended for Node 14
-      "skipLibCheck": true,                         // Reccomended for Node 14
-      "forceConsistentCasingInFileNames": true,     // Reccomended for Node 14
+      "strict": true,                               // Reccomended for Node 22
+      "esModuleInterop": true,                      // Reccomended for Node 22
+      "skipLibCheck": true,                         // Reccomended for Node 22
+      "forceConsistentCasingInFileNames": true,     // Reccomended for Node 22
 
       "sourceMap": true,                            // Generates .map file for debugging
       "outDir": "./build/",                         // write .js and .map files here
